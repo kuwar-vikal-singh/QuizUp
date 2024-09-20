@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.GameActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/cross"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:src="@drawable/cross" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:background="@drawable/qus_bg"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:paddingStart="@dimen/_25sdp"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_25sdp"
+        android:paddingBottom="@dimen/_15sdp"
+        android:text="What is the most Popular sport through the world"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:gravity="center"
+        android:text="30"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/_9sdp"
+        android:textStyle="bold"
+        android:background="@drawable/timer_bg"
+        app:layout_constraintBottom_toTopOf="@+id/questionTextView"
+        app:layout_constraintEnd_toEndOf="@+id/questionTextView"
+        app:layout_constraintStart_toStartOf="@+id/questionTextView"
+        app:layout_constraintTop_toTopOf="@+id/questionTextView" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="@+id/questionTextView"
+        app:layout_constraintStart_toStartOf="@+id/questionTextView"
+        app:layout_constraintTop_toBottomOf="@+id/questionTextView">
+
+        <TextView
+            android:id="@+id/option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_11sdp"
+            android:text="Option 1"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:textColor="@color/darkGray"
+            android:layout_margin="@dimen/_10sdp"
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/option_bg"
+            />
+        <TextView
+            android:id="@+id/option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_11sdp"
+            android:text="Option 1"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:textColor="@color/darkGray"
+            android:layout_margin="@dimen/_10sdp"
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/option_bg"
+            />
+        <TextView
+            android:id="@+id/option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_11sdp"
+            android:text="Option 1"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:textColor="@color/darkGray"
+            android:layout_margin="@dimen/_10sdp"
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/option_bg"
+            />
+        <TextView
+            android:id="@+id/option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_11sdp"
+            android:text="Option 1"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:textColor="@color/darkGray"
+            android:layout_margin="@dimen/_10sdp"
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/option_bg"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:text="Next"
+            android:elevation="4dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            android:background="@drawable/btn_bg"
+            android:layout_margin="@dimen/_10sdp"
+            />
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

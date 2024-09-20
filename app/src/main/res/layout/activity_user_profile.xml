@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.UserProfileActivity">
+
+    <ImageView
+        android:id="@+id/userPic"
+        android:layout_width="@dimen/_65sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:src="@drawable/boy"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_15sdp"/>
+
+    <LinearLayout
+        android:id="@+id/logOutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/_15sdp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:src="@drawable/logout"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textColor="@color/red"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:textSize="@dimen/_10sdp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/userPic"
+        android:layout_margin="@dimen/_25sdp">
+
+
+        <LinearLayout
+            android:layout_below="@+id/userPic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_5sdp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player Name"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/darkGray"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/playerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:gravity="left"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold"/>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@+id/userPic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_5sdp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player Email"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/darkGray"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/playerEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:gravity="left"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold"/>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        >
+
+        <com.axel.quizup.ProgressUi.CircularProgressBar
+            android:id="@+id/cirProgress"
+            android:layout_width="@dimen/_95sdp"
+            android:layout_height="@dimen/_95sdp"
+            android:layout_margin="@dimen/_5sdp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent Played Score"
+            android:fontFamily="@font/poppins"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

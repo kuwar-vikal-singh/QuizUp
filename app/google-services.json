@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "323355654519",
+    "project_id": "quizup-bdd5a",
+    "storage_bucket": "quizup-bdd5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323355654519:android:6b3ab21fd259fef5dc8972",
+        "android_client_info": {
+          "package_name": "com.axel.quizup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDS1Yel11XrIBR6MxQALLu_mZ8fhD0W_q4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
